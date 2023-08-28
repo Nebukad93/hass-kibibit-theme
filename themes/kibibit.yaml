@@ -18,7 +18,8 @@ kibibit:
   divider-color: var(--primary-background-color)
   accent-color: rgba(255, 159, 9, 1)
   # Fonts
-  primary-font-family: 'Comfortaa'
+  primary-font-family: 'Raleway,sans-serif'
+  secondary-font-family: 'Raleway,sans-serif'
   paper-font-common-base_-_font-family: "var(--primary-font-family)"
   paper-font-common-code_-_font-family: "var(--primary-font-family)"
   paper-font-body1_-_font-family: "var(--primary-font-family)"
@@ -60,6 +61,7 @@ kibibit:
   card-background-color: var(--secondary-background-color)  # Unused entities table background
   paper-listbox-background-color: var(--primary-background-color)
   ha-card-border-radius: 20px
+  ha-card-border-width: 0px
   ha-card-background: 'rgba(150, 150, 150, 0.1)'
   paper-card-background-color: var(--ha-card-background)
   # Toggles
@@ -176,3 +178,13 @@ kibibit-dark-cards:
   mini-media-player-icon-color: white
   fc-neutral-bg-color: var(--primary-background-color)
   fc-page-bg-color: transparent
+  # Code Editor
+  code-editor-background-color: var(--primary-background-color) # (main code page background)
+  code-editor-gutter-color: var(--primary-background-color) # (line numbers column background)
+  # Inputs
+  input-fill-color: var(--primary-background-color)
+  input-ink-color: var(--primary-text-color)
+  input-label-ink-color: var(--primary-text-color)
+#  input-disabled-ink-color: rgba(100, 100, 100, 1) # needs to be tested
+#  input-dropdown-icon-color: white # needs to be tested
+

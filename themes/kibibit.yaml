@@ -62,8 +62,9 @@ kibibit:
       # Cards
       card-background-color: var(--secondary-background-color) # Unused entities table background
       paper-listbox-background-color: var(--primary-background-color)
-      ha-card-border-radius: 20px
+      ha-card-border-radius: 13px
       ha-card-border-width: 0px
+      ha-card-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.16) # glitches in swipe-card with cards effect - use flip
       ha-card-background: 'rgba(150, 150, 150, 0.1)'
       paper-card-background-color: var(--ha-card-background)
       # Toggles
@@ -156,6 +157,7 @@ kibibit:
       paper-listbox-background-color: var(--primary-background-color)
       ha-card-border-radius: 20px
       ha-card-border-width: 0px
+      ha-card-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.16) # glitches in swipe-card with cards effect - use flip
       ha-card-background: 'rgba(0, 0, 0, 0.3)'
       paper-card-background-color: var(--ha-card-background)
       # Toggles

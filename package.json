@@ -2,7 +2,7 @@
   "name": "@kibibit/hass-kibibit-theme",
   "version": "0.0.0-development",
   "description": "A milky glass theme for Home Assistant",
-  "homepage": "https://github.com/Kibibit/hass-kibibit-theme#readme",
+  "homepage": "https://github.com/Nebukad93/hass-kibibit-theme#readme",
   "files": [
     "INFO.md",
     "/themes",
@@ -10,12 +10,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kibibit/hass-kibibit-theme.git"
+    "url": "https://github.com/Nebukad93/hass-kibibit-theme.git"
   },
   "author": "thatkookooguy <neilkalman@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Kibibit/hass-kibibit-theme/issues"
+    "url": "https://github.com/Nebukad93/hass-kibibit-theme/issues"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",

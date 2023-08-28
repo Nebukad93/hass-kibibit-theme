@@ -102,7 +102,7 @@ kibibit:
 #
 kibibit-dark-cards:
   # Global
-  background-image: "center / cover no-repeat fixed url('https://thatkookooguy.github.io/https-assets/bg-kibibit-theme.png')"
+  background-image: "center / cover no-repeat fixed url('/local/bg.png'), center / cover no-repeat fixed url('https://thatkookooguy.github.io/https-assets/bg/abstract/bg.png')"
   lovelace-background: var(--background-image)
   primary-color: "#209cee"
   light-primary-color: "#B6B6C1"
@@ -111,7 +111,8 @@ kibibit-dark-cards:
   divider-color: var(--primary-background-color)
   accent-color: rgba(255, 159, 9, 1)
   # Fonts
-  primary-font-family: 'Comfortaa'
+  primary-font-family: 'Raleway,sans-serif'
+  secondary-font-family: 'Raleway,sans-serif'
   paper-font-common-base_-_font-family: "var(--primary-font-family)"
   paper-font-common-code_-_font-family: "var(--primary-font-family)"
   paper-font-body1_-_font-family: "var(--primary-font-family)"
@@ -153,6 +154,7 @@ kibibit-dark-cards:
   card-background-color: var(--secondary-background-color)  # Unused entities table background
   paper-listbox-background-color: var(--primary-background-color)
   ha-card-border-radius: 20px
+  ha-card-border-width: 0px
   ha-card-background: 'rgba(0, 0, 0, 0.3)'
   paper-card-background-color: var(--ha-card-background)
   # Toggles
@@ -185,6 +187,6 @@ kibibit-dark-cards:
   input-fill-color: var(--primary-background-color)
   input-ink-color: var(--primary-text-color)
   input-label-ink-color: var(--primary-text-color)
-#  input-disabled-ink-color: rgba(100, 100, 100, 1) # needs to be tested
-#  input-dropdown-icon-color: white # needs to be tested
+  input-disabled-ink-color: rgba(100, 100, 100, 1)
+  input-dropdown-icon-color: white
 

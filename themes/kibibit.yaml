@@ -15,20 +15,23 @@ kibibit:
       lovelace-background: var(--background-image)
       primary-color: "#209cee"
       light-primary-color: "#B6B6C1"
-      primary-background-color: "#212121"
+      #primary-background-color: "#212121"
+      primary-background-color: "#100129"
       secondary-background-color: rgba(25, 25, 25, 0.7)
       divider-color: var(--primary-background-color)
       accent-color: rgba(255, 159, 9, 1)
       # Fonts
       primary-font-family: 'Raleway,sans-serif'
       secondary-font-family: 'Raleway,sans-serif'
-      paper-font-common-base_-_font-family: "var(--primary-font-family)"
-      paper-font-common-code_-_font-family: "var(--primary-font-family)"
-      paper-font-body1_-_font-family: "var(--primary-font-family)"
-      paper-font-subhead_-_font-family: "var(--primary-font-family)"
-      paper-font-headline_-_font-family: "var(--primary-font-family)"
-      paper-font-caption_-_font-family: "var(--primary-font-family)"
-      paper-font-title_-_font-family: "var(--primary-font-family)"
+      font-variant-numeric: 'lining-nums'
+      paper-font-common-base_-_font-family: var(--primary-font-family)
+      paper-font-common-code_-_font-family: var(--primary-font-family)
+      paper-font-body1_-_font-family: var(--primary-font-family)
+      paper-font-subhead_-_font-family: var(--primary-font-family)
+      paper-font-headline_-_font-family: var(--primary-font-family)
+      paper-font-caption_-_font-family: var(--primary-font-family)
+      paper-font-title_-_font-family: var(--primary-font-family)
+      ha-card-header-font-family: var(--primary-font-family)
       # Text
       primary-text-color: "#FFF"
       secondary-text-color: "#d3d3d3"
@@ -84,6 +87,10 @@ kibibit:
       paper-item-icon-color: white # also should mini-media-player icon white (but doesn't work by itself)
       more-info-header-background: rgba(25, 25, 25, 0.5)
       app-header-background-color: var(--primary-background-color)
+      dialog-backdrop-filter: blur(5px)
+      iron-overlay-backdrop-filter: blur(5px)
+      #iron-overlay-backdrop-opacity: 1
+      iron-overlay-backdrop-background-color: rgba(0, 0, 0, 0.32)
       # Custom
       mcg-title-letter-spacing: .15em
       mini-media-player-base-color: white
@@ -106,7 +113,8 @@ kibibit:
       # Global
       background-image: "center / cover no-repeat fixed url('/local/bg.png'), center / cover no-repeat fixed url('https://thatkookooguy.github.io/https-assets/bg/abstract/bg.png')"
       lovelace-background: var(--background-image)
-      primary-color: "#209cee"
+      #primary-color: "#209cee"
+      primary-color: "#100029"
       light-primary-color: "#B6B6C1"
       primary-background-color: "#212121"
       secondary-background-color: rgba(25, 25, 25, 0.7)
@@ -115,13 +123,15 @@ kibibit:
       # Fonts
       primary-font-family: 'Raleway,sans-serif'
       secondary-font-family: 'Raleway,sans-serif'
-      paper-font-common-base_-_font-family: "var(--primary-font-family)"
-      paper-font-common-code_-_font-family: "var(--primary-font-family)"
-      paper-font-body1_-_font-family: "var(--primary-font-family)"
-      paper-font-subhead_-_font-family: "var(--primary-font-family)"
-      paper-font-headline_-_font-family: "var(--primary-font-family)"
-      paper-font-caption_-_font-family: "var(--primary-font-family)"
-      paper-font-title_-_font-family: "var(--primary-font-family)"
+      font-variant-numeric: 'lining-nums'
+      paper-font-common-base_-_font-family: var(--primary-font-family)
+      paper-font-common-code_-_font-family: var(--primary-font-family)
+      paper-font-body1_-_font-family: var(--primary-font-family)
+      paper-font-subhead_-_font-family: var(--primary-font-family)
+      paper-font-headline_-_font-family: var(--primary-font-family)
+      paper-font-caption_-_font-family: var(--primary-font-family)
+      paper-font-title_-_font-family: var(--primary-font-family)
+      ha-card-header-font-family: var(--primary-font-family)
       # Text
       primary-text-color: "#FFF"
       secondary-text-color: "#d3d3d3"
@@ -183,6 +193,9 @@ kibibit:
       mini-media-player-icon-color: white
       fc-neutral-bg-color: var(--primary-background-color)
       fc-page-bg-color: transparent
+      dialog-backdrop-filter: blur(5px)
+      iron-overlay-backdrop-opacity: 1
+      iron-overlay-backdrop-background-color: rgba(0, 0, 0, 0.32)
       # Code Editor
       code-editor-background-color: var(--primary-background-color) # (main code page background)
       code-editor-gutter-color: var(--primary-background-color) # (line numbers column background)
@@ -192,3 +205,22 @@ kibibit:
       input-label-ink-color: var(--primary-text-color)
       input-disabled-ink-color: rgba(100, 100, 100, 1)
       input-dropdown-icon-color: white
+  card-mod-theme: kibibit
+  
+  card-mod-more-info-yaml: |
+      $: |
+        .mdc-dialog .mdc-dialog__scrim {
+          backdrop-filter: blur(4px);
+          -webkit-backdrop-filter: blur(4px);
+          background: var(--secondary-background-color);
+        } 
+        .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+          box-shadow: none !important;
+          border-radius: var(--ha-card-border-radius);
+        }
+      .: |
+        :host {
+          --ha-card-box-shadow: none;
+        }
+    
+#          barckground: rgba(0,0,0,.6);
